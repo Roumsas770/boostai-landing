@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOST AI - Automate Your Content with AI</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 60px 40px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #2d3748;
+            line-height: 1.2;
+        }
+        .subtitle {
+            font-size: 20px;
+            color: #4a5568;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+        .features {
+            text-align: left;
+            margin: 40px 0;
+        }
+        .feature {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        .feature-icon {
+            font-size: 24px;
+            margin-right: 15px;
+        }
+        .feature-text {
+            font-size: 16px;
+            color: #4a5568;
+        }
+        .cta-box {
+            background: #f7fafc;
+            border-radius: 15px;
+            padding: 40px 30px;
+            margin-top: 40px;
+        }
+        .cta-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #2d3748;
+        }
+        input[type="email"] {
+            width: 100%;
+            padding: 15px 20px;
+            font-size: 16px;
+            border: 2px solid #e2e8f0;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            transition: border-color 0.3s;
+        }
+        input[type="email"]:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        button {
+            width: 100%;
+            padding: 15px 20px;
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        button:hover {
+            transform: translateY(-2px);
+        }
+        .small-text {
+            font-size: 14px;
+            color: #718096;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🤖 BOOST AI</h1>
+        <p class="subtitle">
+            AI explained for normal humans.<br>
+            Automate your content creation in 2025.
+        </p>
+        
+        <div class="features">
+            <div class="feature">
+                <span class="feature-icon">🎥</span>
+                <span class="feature-text"><strong>100% AI Generated</strong> - Viral videos created automatically while you sleep</span>
+            </div>
+            <div class="feature">
+                <span class="feature-icon">⚡</span>
+                <span class="feature-text"><strong>Zero Code Required</strong> - No-code systems accessible to everyone</span>
+            </div>
+            <div class="feature">
+                <span class="feature-icon">📈</span>
+                <span class="feature-text"><strong>Full Transparency</strong> - We document everything in real-time</span>
+            </div>
+        </div>
+
+        <div class="cta-box">
+            <h2 class="cta-title">🎁 Get 10 Viral AI Hooks</h2>
+            <form id="emailForm">
+                <input 
+                    type="email" 
+                    id="email" 
+                    placeholder="your@email.com" 
+                    required
+                />
+                <button type="submit">Send me the hooks 🚀</button>
+            </form>
+            <p class="small-text">
+                Free template • 0 spam • Unsubscribe anytime
+            </p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('emailForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('email').value;
+            alert('Thanks! ConvertKit integration coming right after 😉');
+        });
+    </script>
+</body>
+</html>
