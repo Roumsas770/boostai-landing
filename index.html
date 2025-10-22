@@ -101,6 +101,14 @@
             color: #718096;
             margin-top: 20px;
         }
+        .success-message {
+            display: none;
+            background: #48bb78;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
     </style>
 </head>
 <body>
@@ -128,9 +136,13 @@
 
         <div class="cta-box">
             <h2 class="cta-title">🎁 Get 10 Viral AI Hooks</h2>
-            <form id="emailForm">
+            <div class="success-message" id="successMessage">
+                Check your email! Your hooks are on the way 🚀
+            </div>
+            <form action="https://app.kit.com/forms/7952738/subscriptions" method="post" id="emailForm">
                 <input 
                     type="email" 
+                    name="email_address"
                     id="email" 
                     placeholder="your@email.com" 
                     required
@@ -143,11 +155,14 @@
         </div>
     </div>
 
+    <script async data-uid="30b131f9c9" src="https://boost-ai.kit.com/30b131f9c9/index.js"></script>
     <script>
         document.getElementById('emailForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const email = document.getElementById('email').value;
-            alert('Thanks! ConvertKit integration coming right after 😉');
+            // Le formulaire va soumettre normalement à Kit
+            // On affiche juste le message de succès après
+            setTimeout(function() {
+                document.getElementById('successMessage').style.display = 'block';
+            }, 100);
         });
     </script>
 </body>
